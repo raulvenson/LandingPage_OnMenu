@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import GridOn from "@material-ui/icons/GridOn";
 import Restaurant from "@material-ui/icons/Restaurant";
-import Fingerprint from "@material-ui/icons/Fingerprint";
+import PhoneIphone from "@material-ui/icons/PhoneIphone";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -23,11 +23,11 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>O que é?</h2>
           <h5 className={classes.description}>
-            O projeto On Menu, é uma ferramenta para visualização de cardápio de
-            forma online, através de um Progressive Web App acessado via QR
-            Code. Proporcionando uma nova experiência de atendimento aos
-            clientes, impulsionando o uso de tecnologia em ambientes que estão
-            emergindo no cenário.
+          On Menu é um projeto acadêmico desenvolvido por alunos do curso de
+          Gestão da Tecnologia da Informação da Faculdade La Salle, tendo como
+          o objetivo principal entregar uma nova ferramenta de "Cardápios Web"
+          para seu comércio. A base para tudo isso acontecer é a motivação, amor
+          e entusiasmo de seus integrantes por tecnologia. 
           </h5>
         </GridItem>
       </GridContainer>
@@ -53,9 +53,9 @@ export default function ProductSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Fingerprint"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Fingerprint}
+              title="Mobile"
+              description="Seu cardápio é acessado por qualquer cliente que tenha um smartphone. Também é possível ser acessado pelo computador"
+              icon={PhoneIphone}
               iconColor="danger"
               vertical
             />
