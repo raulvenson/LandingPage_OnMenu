@@ -22,7 +22,8 @@ export default function WorkSection() {
         <GridItem cs={12} sm={12} md={8}>
           <h2 className={classes.title}>Demonstre interesse</h2>
           <h4 className={classes.description}>
-            Envie-nos uma mensagem se tiver interesse em entregar uma nova experiência tecnológia aos seus clientes.
+            Envie-nos uma mensagem se tiver interesse em entregar uma nova
+            experiência tecnológia aos seus clientes.
           </h4>
           <form>
             <GridContainer>
