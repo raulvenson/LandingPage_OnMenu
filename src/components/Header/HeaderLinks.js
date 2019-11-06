@@ -26,8 +26,7 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
-      
-      
+     
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-facebook"
@@ -41,7 +40,7 @@ export default function HeaderLinks(props) {
             target="_blank"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-facebook"} />
+            <i className={classes.socialIcons + " fab fa-facebook"} />Facebook
           </Button>
         </Tooltip>
       </ListItem>
@@ -58,7 +57,25 @@ export default function HeaderLinks(props) {
             target="_blank"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-instagram"} />
+            <i className={classes.socialIcons + " fab fa-instagram"} />Instagram
+          </Button>
+        </Tooltip>
+      </ListItem>
+       
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="instagram-facebook"
+          title="Envie uma mensagem no WhatsApp"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            color="transparent"
+            href="https://api.whatsapp.com/send?phone=5565999271048&text=Olá,%20tenho%20interesse%20no%20cardapio%20OnMenu."
+            target="_blank"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fab fa-whatsapp"} />
           </Button>
         </Tooltip>
       </ListItem>
