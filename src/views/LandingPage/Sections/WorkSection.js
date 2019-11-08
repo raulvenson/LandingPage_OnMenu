@@ -11,9 +11,9 @@ import GridItem from "components/Grid/GridItem.js";
 // import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/workStyle.js";
-import './style.css';
+import "./style.css";
 
-import whats from 'assets/img/whatslink.png';
+import whats from "assets/img/whatslink.png";
 
 const useStyles = makeStyles(styles);
 
@@ -32,7 +32,12 @@ export default function WorkSection() {
             <GridContainer justify="center">
               <GridItem>
                 <a href="https://api.whatsapp.com/send?phone=5565999271048&text=Olá,%20tenho%20interesse%20no%20cardapio%20OnMenu.">
-                  <img id="img-whatsapp-worksection" src={whats} alt="linkwhatsapp" height="95px" />
+                  <img
+                    id="img-whatsapp-worksection"
+                    src={whats}
+                    alt="linkwhatsapp"
+                    height="95px"
+                  />
                 </a>
               </GridItem>
             </GridContainer>
