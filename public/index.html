@@ -24,7 +24,7 @@
       type="text/css"
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
     />
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link
       href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
       rel="stylesheet"
@@ -43,6 +43,30 @@
   <body>
     <noscript> You need to enable JavaScript to run this app. </noscript>
     <div id="root"></div>
+
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA3YJvCdhQqrjQRzoAH6DcMxaJdA_sQvL0",
+    authDomain: "on-menu-shop.firebaseapp.com",
+    databaseURL: "https://on-menu-shop.firebaseio.com",
+    projectId: "on-menu-shop",
+    storageBucket: "on-menu-shop.appspot.com",
+    messagingSenderId: "111997182249",
+    appId: "1:111997182249:web:14c573128c81415a2a5738",
+    measurementId: "G-CP4WW4JN1Q"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
