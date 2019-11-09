@@ -31,7 +31,11 @@ export default function WorkSection() {
           <form>
             <GridContainer justify="center">
               <GridItem>
-                <a href="https://api.whatsapp.com/send?phone=5565999271048&text=Olá,%20tenho%20interesse%20no%20cardapio%20OnMenu.">
+                <a
+                  href="https://api.whatsapp.com/send?phone=5565999271048&text=Olá,%20tenho%20interesse%20no%20cardapio%20OnMenu."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     id="img-whatsapp-worksection"
                     src={whats}
@@ -42,6 +46,10 @@ export default function WorkSection() {
               </GridItem>
             </GridContainer>
           </form>
+          <h4 className={classes.description}>
+            Ou pelo email{" "}
+            <a href="mailto:onmenu.pwa@gmail.com">onmenu.pwa@gmail.com</a>
+          </h4>
         </GridItem>
       </GridContainer>
     </div>

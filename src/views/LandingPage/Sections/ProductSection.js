@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -23,11 +24,11 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>O que é?</h2>
           <h5 className={classes.description}>
-          On Menu é um projeto acadêmico desenvolvido por alunos do curso de
-          Gestão da Tecnologia da Informação da Faculdade La Salle, tendo como
-          o objetivo principal entregar uma nova ferramenta de "Cardápios Web"
-          para seu comércio. A base para tudo isso acontecer é a motivação, amor
-          e entusiasmo de seus integrantes por tecnologia. 
+            On Menu é um projeto acadêmico desenvolvido por alunos do curso de
+            Gestão da Tecnologia da Informação da Faculdade La Salle, tendo como
+            o objetivo principal entregar uma nova ferramenta de "Cardápios Web"
+            para seu comércio. A base para tudo isso acontecer é a motivação,
+            amor e entusiasmo de seus integrantes por tecnologia.
           </h5>
         </GridItem>
       </GridContainer>

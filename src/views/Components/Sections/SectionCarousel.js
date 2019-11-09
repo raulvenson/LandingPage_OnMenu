@@ -38,7 +38,7 @@ export default function SectionCarousel() {
                 <div>
                   <img src={image1} alt="First slide" className="slick-image" />
                 </div>
-                <div>
+                {/* <div>
                   <img
                     src={image2}
                     alt="Second slide"
@@ -59,7 +59,7 @@ export default function SectionCarousel() {
                       Yellowstone National Park, United States
                     </h4>
                   </div>
-                </div>
+                </div> */}
               </Carousel>
             </Card>
           </GridItem>

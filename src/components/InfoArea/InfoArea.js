@@ -7,8 +7,18 @@ import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 
 import styles from "assets/jss/material-kit-react/components/infoStyle.js";
+// import SvgIcon from "@material-ui/core/SvgIcon";
+// import QRcode from "../../assets/img/qrCode.png"
 
 const useStyles = makeStyles(styles);
+
+// function QRicon(props) {
+//   return (
+//     <SvgIcon {...props}>
+//       <img src={QRcode} />
+//     </SvgIcon>
+//   );
+// }
 
 export default function InfoArea(props) {
   const classes = useStyles();

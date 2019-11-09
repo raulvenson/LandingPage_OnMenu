@@ -148,6 +148,17 @@ export default function TeamSection() {
                   Tecnologia.
                 </p>
               </CardBody>
+              <CardFooter className={classes.justifyCenter}>
+                <Button
+                  justIcon
+                  color="transparent"
+                  className={classes.margin5}
+                  href="https://www.facebook.com/profile.php?id=100004063123859"
+                  target="_blank"
+                >
+                  <i className={classes.socials + " fab fa-facebook"} />
+                </Button>
+              </CardFooter>
             </Card>
           </GridItem>
           <GridItem xs={12} sm={6} md={4}>
