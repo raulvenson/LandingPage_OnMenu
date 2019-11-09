@@ -19,6 +19,7 @@ import styles from "assets/jss/material-kit-react/views/landingPageSections/team
 import team1 from "assets/img/faces/RaulVenson1.jpeg";
 import team2 from "assets/img/faces/LuizHenrique.jpg";
 import Default from "assets/img/faces/default.png";
+import LucasAlcantra from "assets/img/faces/LucasAlcantra.jpeg";
 
 const useStyles = makeStyles(styles);
 
@@ -56,10 +57,10 @@ export default function TeamSection() {
                   justIcon
                   color="transparent"
                   className={classes.margin5}
-                  href="https://twitter.com/VRaauuul"
+                  href="https://www.facebook.com/profile.php?id=100011419161782"
                   target="_blank"
                 >
-                  <i className={classes.socials + " fab fa-twitter"} />
+                  <i className={classes.socials + " fab fa-facebook"} />
                 </Button>
                 <Button
                   justIcon
@@ -69,15 +70,6 @@ export default function TeamSection() {
                   target="_blank"
                 >
                   <i className={classes.socials + " fab fa-instagram"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                  href="https://www.facebook.com/profile.php?id=100011419161782"
-                  target="_blank"
-                >
-                  <i className={classes.socials + " fab fa-facebook"} />
                 </Button>
                 <Button
                   justIcon
@@ -112,9 +104,9 @@ export default function TeamSection() {
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                Acadêmico da Faculdade La Salle Lucas do Rio Verde, cursando
-                Gestão da Tecnologia da Informação e um entusiasta em
-                Tecnologia, Negócios Eletrônicos e Design.
+                  Acadêmico da Faculdade La Salle Lucas do Rio Verde, cursando
+                  Gestão da Tecnologia da Informação e um entusiasta em
+                  Tecnologia, Negócios Eletrônicos e Design.
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
@@ -131,8 +123,10 @@ export default function TeamSection() {
                   justIcon
                   color="transparent"
                   className={classes.margin5}
+                  href="https://www.instagram.com/luizhenriquebarbosa_/"
+                  target="_blank"
                 >
-                  <i className={classes.socials + " fab fa-linkedin"} />
+                  <i className={classes.socials + " fab fa-instagram"} />
                 </Button>
               </CardFooter>
             </Card>
@@ -149,35 +143,17 @@ export default function TeamSection() {
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                Acadêmico da Faculdade La Salle Lucas do Rio Verde, cursando
-                Gestão da Tecnologia da Informação e um entusiasta em
-                Tecnologia.
+                  Acadêmico da Faculdade La Salle Lucas do Rio Verde, cursando
+                  Gestão da Tecnologia da Informação e um entusiasta em
+                  Tecnologia.
                 </p>
               </CardBody>
-              <CardFooter className={classes.justifyCenter}>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                  href="https://www.facebook.com/luizhenrique.barbosa3"
-                  target="_blank"
-                >
-                  <i className={classes.socials + " fab fa-facebook"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-linkedin"} />
-                </Button>
-              </CardFooter>
             </Card>
           </GridItem>
           <GridItem xs={12} sm={6} md={4}>
             <Card plain>
               <GridItem xs={12} sm={6} md={6} className={classes.itemGrid}>
-                <img src={Default} alt="..." className={imageClasses} />
+                <img src={LucasAlcantra} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 Lucas Alcantra
@@ -186,9 +162,9 @@ export default function TeamSection() {
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                Acadêmico da Faculdade La Salle Lucas do Rio Verde, cursando
-                Gestão da Tecnologia da Informação e um entusiasta em
-                Tecnologia.
+                  Acadêmico da Faculdade La Salle Lucas do Rio Verde, cursando
+                  Gestão da Tecnologia da Informação e um entusiasta em
+                  Tecnologia.
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
@@ -196,17 +172,10 @@ export default function TeamSection() {
                   justIcon
                   color="transparent"
                   className={classes.margin5}
-                  href="https://www.facebook.com/luizhenrique.barbosa3"
+                  href="https://www.instagram.com/lucasbpt/?hl=pt-br"
                   target="_blank"
                 >
-                  <i className={classes.socials + " fab fa-facebook"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-linkedin"} />
+                  <i className={classes.socials + " fab fa-instagram"} />
                 </Button>
               </CardFooter>
             </Card>
