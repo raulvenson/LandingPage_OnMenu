@@ -31,11 +31,11 @@ export default function LandingPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
-    <div>
+    <div id="top">
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand=""
+        brand="On Menu"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -57,10 +57,18 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <ProductSection />
-          <SectionCarousel />
-          <TeamSection />
-          <WorkSection />
+          <div id="sobre">
+            <ProductSection />
+          </div>
+          <div id="carousel">
+            <SectionCarousel />
+          </div>
+          <div id="equipe">
+            <TeamSection />
+          </div>
+          <div id="contato">
+            <WorkSection />
+          </div>
         </div>
       </div>
       <Footer />

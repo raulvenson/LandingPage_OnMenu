@@ -7,9 +7,15 @@ import classNames from "classnames";
 // material-ui core components
 import { List, ListItem } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import Tooltip from "@material-ui/core/Tooltip";
+
 
 // @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
+import InstagramIcon from '@material-ui/icons/Instagram';
+import FacebookIcon from '@material-ui/icons/Facebook';
+
+//core components
+import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/material-kit-react/components/footerStyle.js";
 
@@ -32,53 +38,43 @@ export default function Footer(props) {
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
+              <Tooltip 
+                id="instagram-facebook"
+                title="Curta nossa página no Facebook!"
+                placement={window.innerWidth > 959 ? "top" : "left"}
+                classes={{ tooltip: classes.tooltip }}
               >
-                Creative Tim
-              </a>
+                <Button
+                  color="transparent"
+                  href="https://www.facebook.com/cardapio.onmenu/"
+                  target="_blank"
+                  className={classes.navLink}
+                >
+                  <i className={classes.socialIcons + " fab fa-facebook"} />
+                </Button>
+              </Tooltip>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/presentation?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
+              <Tooltip 
+                id="instagram-facebook"
+                title="Siga no Instagram!"
+                placement={window.innerWidth > 959 ? "top" : "left"}
+                classes={{ tooltip: classes.tooltip }}
               >
-                About us
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="http://blog.creative-tim.com/?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Blog
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/license?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Licenses
-              </a>
+                <Button
+                  color="transparent"
+                  href="https://www.instagram.com/menu.on/?hl=pt-br"
+                  target="_blank"
+                  className={classes.navLink}
+                >
+                  <i className={classes.socialIcons + " fab fa-instagram"} />
+                </Button>
+              </Tooltip>
             </ListItem>
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made by VRauul{" "}
-           based on{" "}
-          <a
-            href="https://www.creative-tim.com?ref=mkr-footer"
-            className={aClasses}
-            target="_blank"
-          >
-            Creative Tim
-          </a>.
+          &copy; {1900 + new Date().getYear()} , made by VRauul.
         </div>
       </div>
     </footer>

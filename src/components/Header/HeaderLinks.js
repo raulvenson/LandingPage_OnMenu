@@ -23,61 +23,45 @@ import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js
 const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props) {
+
   const classes = useStyles();
   return (
     <List className={classes.list}>
-     
       <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-facebook"
-          title="Siga nos no facebook"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
+        <Button
+          color="transparent"
+          href="#sobre"
+          className={classes.navLink}
         >
-          <Button
-            color="transparent"
-            href="https://www.facebook.com/cardapio.onmenu/"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-facebook"} />Facebook
-          </Button>
-        </Tooltip>
+          <i className={classes.socialIcons + " far fa-question-circle"} />Sobre
+        </Button>        
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-tooltip"
-          title="Siga nos no instagram"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
+        <Button
+          color="transparent"
+          href="#carousel"
+          className={classes.navLink}
         >
-          <Button
-            color="transparent"
-            href="https://www.instagram.com/menu.on/?hl=pt-br"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-instagram"} />Instagram
-          </Button>
-        </Tooltip>
+          <i className={classes.socialIcons + " far fa-image"} />Mídia
+        </Button>
       </ListItem>
-       
       <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-facebook"
-          title="Envie uma mensagem no WhatsApp"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
+        <Button
+          color="transparent"
+          href="#equipe"
+          className={classes.navLink}
         >
-          <Button
-            color="transparent"
-            href="https://api.whatsapp.com/send?phone=5565999271048&text=Olá,%20tenho%20interesse%20no%20cardapio%20OnMenu."
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-whatsapp"} />
-          </Button>
-        </Tooltip>
+          <i className={classes.socialIcons + " fas fa-users"} />Equipe
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          color="transparent"
+          href="#contato"
+          className={classes.navLink}
+        >
+          <i className={classes.socialIcons + " far fa-comments"} />Contato
+        </Button>
       </ListItem>
     </List>
   );

@@ -4,9 +4,10 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import GridOn from "@material-ui/icons/GridOn";
+// import GridOn from "@material-ui/icons/GridOn";
 import Restaurant from "@material-ui/icons/Restaurant";
 import PhoneIphone from "@material-ui/icons/PhoneIphone";
+import { ReactComponent as QrCode } from "../../../assets/svg/qr-code.svg";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -38,7 +39,7 @@ export default function ProductSection() {
             <InfoArea
               title="QR Code"
               description="Tecnologia que possibilita o fácil acesso a ferramenta, de forma que interessa o usuário por instigar a descobrir o que pode acontecer"
-              icon={GridOn}
+              icon={QrCode}
               iconColor="info"
               vertical
             />
@@ -60,6 +61,16 @@ export default function ProductSection() {
               iconColor="danger"
               vertical
             />
+          </GridItem>
+        </GridContainer>
+        <GridContainer justify="center">
+          <GridItem xs={12} sm={12} md={8}>
+            <h2 className={classes.title}>Como funciona?</h2>
+            <h5 className={classes.description}>
+              Entre em contato conosco por <a href="#contato">aqui</a> e nos
+              envie seu cardápio, que nós cuidamos do resto, para que você e
+              seus clientes fiquem satisfeitos!
+            </h5>
           </GridItem>
         </GridContainer>
       </div>
